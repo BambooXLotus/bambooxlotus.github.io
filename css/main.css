@@ -1,4 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,300,400);
+@font-face {
+    font-family: padthai;
+    src: url('../font/padthai.TTF');
+}
+
 
 /* Global Styles */
 
@@ -11,7 +16,13 @@ body {
     font-weight: 400;
     font-size: 12px;
 }
-h1, h2 {
+
+h1 {
+    font-family: padthai, sans-serif;
+}
+
+h1,
+h2 {
     color: #F9F9F9;
     text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.45);
     text-transform: uppercase;
@@ -19,22 +30,27 @@ h1, h2 {
     letter-spacing: .1em;
 }
 
-h2{
-        font-size: 3.1em;
+h2 {
+    font-size: 3.1em;
 }
+
 .vert-text {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
 }
+
 .vert-text h1 {
     padding: 0;
     margin: 0;
     font-size: 5.5em;
     font-weight: 100;
 }
+
+
 /* Side Menu */
-.nav{
+
+.nav {
     text-transform: uppercase;
     letter-spacing: .2em;
     font-size: 1.2em;
@@ -56,6 +72,7 @@ h2{
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
+
 .sidebar-nav {
     position: absolute;
     top: 0;
@@ -64,42 +81,51 @@ h2{
     margin: 0;
     padding: 0;
 }
+
 .sidebar-nav li {
     line-height: 40px;
     text-indent: 20px;
 }
+
 .sidebar-nav li a {
     color: #999999;
     display: block;
     text-decoration: none;
 }
+
 .sidebar-nav li a:hover {
     color: #fff;
     background: rgba(255, 255, 255, 0.2);
     text-decoration: none;
 }
+
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
     text-decoration: none;
 }
-.sidebar-nav > .sidebar-brand {
+
+.sidebar-nav> .sidebar-brand {
     height: 55px;
     line-height: 55px;
     font-size: 18px;
 }
-.sidebar-nav > .sidebar-brand a {
+
+.sidebar-nav> .sidebar-brand a {
     color: #999999;
 }
-.sidebar-nav > .sidebar-brand a:hover {
+
+.sidebar-nav> .sidebar-brand a:hover {
     color: #fff;
     background: none;
 }
+
 #menu-toggle {
     top: 0;
     right: 0;
     position: fixed;
     z-index: 1;
 }
+
 #sidebar-wrapper.active {
     right: 250px;
     width: 250px;
@@ -109,9 +135,12 @@ h2{
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
+
 .toggle {
     margin: 5px 5px 0 0;
 }
+
+
 /* Full Page Image Header Area */
 
 .header {
@@ -125,11 +154,15 @@ h2{
     -o-background-size: cover;
     background-size: cover;
 }
+
+
 /* Intro */
 
 .intro {
     padding: 50px 0;
 }
+
+
 /* Services */
 
 .services {
@@ -137,9 +170,11 @@ h2{
     padding: 50px 0;
     color: #ffffff;
 }
+
 .service-item {
     margin-bottom: 15px;
 }
+
 i.service-icon {
     border: 3px solid #ffffff;
     border-radius: 50%;
@@ -151,6 +186,8 @@ i.service-icon {
     vertical-align: middle;
     text-align: center;
 }
+
+
 /* Callout */
 
 .callout {
@@ -164,6 +201,8 @@ i.service-icon {
     -o-background-size: cover;
     background-size: cover;
 }
+
+
 /* Portfolio */
 
 .portfolio {
@@ -172,12 +211,16 @@ i.service-icon {
     padding: 50px 0;
     border-color: white;
 }
+
 .portfolio-item {
     margin-bottom: 25px;
 }
+
 .img-portfolio {
     margin: 0 auto;
 }
+
+
 /* Call to Action */
 
 .call-to-action {
@@ -185,32 +228,43 @@ i.service-icon {
     background: #0a5175;
     padding: 50px 0;
 }
+
 .call-to-action .btn {
     margin: 10px;
 }
+
+
 /* Map */
 
 .map {
     height: 500px;
 }
+
+
 /* Footer */
 
 footer {
     padding: 100px 0;
 }
+
 .top-scroll {
     margin-top: 50px;
 }
+
 .top-scroll a {
     text-decoration: none;
     color: inherit;
 }
+
 i.scroll {
     color: #333333;
 }
+
 i.scroll:hover {
     color: #0a5175;
 }
+
+
 /* Responsive */
 
 @media(max-width: 768px) {
@@ -224,9 +278,11 @@ i.scroll:hover {
         height: 75%;
     }
 }
+
 .bigIcon {
     font-size: 32pt;
 }
+
 .panel {
     border-width: 2px;
     border-color: #ffffff;
@@ -234,21 +290,26 @@ i.scroll:hover {
     background: transparent;
     display: table-row;
 }
+
 .panel:hover {
     border-color: #3D9970;
 }
+
 .panel:hover .panel-title {
     background: #3D9970;
 }
+
 .panel:hover .oliveHighlight {
     color: #3D9970;
 }
+
 .panel-heading {
     border-radius: 0;
     background: #ffffff;
     overflow: hidden;
     padding: 0px;
 }
+
 .panel img {
     -webkit-transition-function: all .6s ease-in-out;
     -moz-transition-function: all .6s ease-in-out;
@@ -256,6 +317,7 @@ i.scroll:hover {
     -ms-transition-function: all .6s ease-in-out;
     transition: all .6s ease-in-out;
 }
+
 .panel:hover img {
     -webkit-filter: blur(2px);
     -moz-filter: blur(2px);
@@ -263,6 +325,7 @@ i.scroll:hover {
     -o-filter: blur(2px);
     filter: blur(2px);
 }
+
 .panel-title {
     position: absolute;
     background: rgba(34, 34, 34, 0.6);
@@ -275,16 +338,20 @@ i.scroll:hover {
     -ms-transition: all .6s ease-in-out;
     transition: all .6s ease-in-out;
 }
+
 .panel-body {
     background: transparent;
     padding: 0, 0, 0, 0;
 }
+
 .top-buffer {
     margin-top: 20px;
 }
+
 .oliveHighlight {
     color: #3D9970;
 }
+
 .stickyBottom {
     position: fixed;
     bottom: 0;
