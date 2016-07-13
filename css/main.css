@@ -15,12 +15,12 @@ body {
 }
 
 h1 {
-    font-family: 'Niconne', cursive;
+    color: #F7D888;
 }
 
 h1,
 h2 {
-    color: #F9F9F9;
+    font-family: 'Niconne', cursive;
     text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.45);
     text-transform: uppercase;
     font-weight: 100;
@@ -28,6 +28,7 @@ h2 {
 }
 
 h2 {
+    color: #F9F9F9;
     font-size: 3.1em;
 }
 
@@ -203,7 +204,14 @@ i.service-icon {
 /* Portfolio */
 
 .lunch {
-    background: #1A5857;
+    background: #A29477;
+    color: white;
+    padding: 50px 0;
+    border-color: white;
+}
+
+.dinner {
+    background: #4E976A;
     color: white;
     padding: 50px 0;
     border-color: white;
