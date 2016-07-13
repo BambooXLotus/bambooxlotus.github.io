@@ -1,23 +1,357 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="home">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Sala Phad Thai</title>
+  <!-- Bootstrap core CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Add custom CSS here -->
+  <link href="css/main.css" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/elementTransitions.css">
+  <script src="js/elementTransitions.js"></script>
+  <style>
+    .et-wrapper {
+      width: 300px;
+      height: 500px;
+      float: left;
+    }
+  </style>
+</head>
 
-  <h1 class="page-heading">Posts</h1>
+<body>
+  <!-- Side Menu -->
+  <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+        <a class="navbar-brand" href="#top">Sala Phad Thai</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#top">Home</a>
+          </li>
+          <li>
+            <a href="#lunch">Lunch</a>
+          </li>
+          <li>
+            <a href="#dinner">Dinner</a>
+          </li>
+          <li>
+            <a href="#About">About</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+  <!-- /Side Menu -->
+  <!-- Full Page Image Header Area -->
+  <div id="top" class="header">
+    <div class="vert-text">
+      <div class="hero">
+        <h1>Sala</h1>
+        <h1>Phad</h1>
+        <h1>Thai</h1>
+      </div>
+    </div>
+  </div>
+  <!-- /Full Page Image Header Area -->
+  <!-- Intro -->
+  <div id="about" class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-xs-4 col-md-offset-1 col-xs-offset-4">
+        </div>
+        <div class="col-md-7 col-xs-12">
+          <address>
+          <strong>Twitter, Inc.</strong><br> 1355 Market Street, Suite 900<br> San Francisco, CA 94103<br>
+          <abbr title="Phone">P:</abbr> (123) 456-7890
+          </address>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <address>
+            <strong>Full Name</strong><br>
+            <a href="mailto:#">first.last@example.com</a>
+          </address>
+          <p>Family owned traditinal thai resteruant.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Intro -->
+  <!-- E -->
+  <div id="lunch" class="lunch">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-8 text-center">
+          <h2>Lunch</h2>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-md-offset-2 text-center">
+          <div class="service-item">
+            <i class="service-icon fa fa-rocket"></i>
+            <h4>Spacecraft Repair</h4>
+            <p>Did your navigation system shut down in the middle of that asteroid field? We can repair any dings and scrapes to your spacecraft!</p>
+          </div>
+        </div>
+        <div class="col-md-2 text-center">
+          <div class="service-item">
+            <i class="service-icon fa fa-magnet"></i>
+            <h4>Problem Solving</h4>
+            <p>Need to know how magnets work? Our problem solving solutions team can help you identify problems and conduct exploratory research.</p>
+          </div>
+        </div>
+        <div class="col-md-2 text-center">
+          <div class="service-item">
+            <i class="service-icon fa fa-shield"></i>
+            <h4>Blacksmithing</h4>
+            <p>Planning a time travel trip to the middle ages? Preserve the space time continuum by blending in with period accurate armor and weapons.</p>
+          </div>
+        </div>
+        <div class="col-md-2 text-center">
+          <div class="service-item">
+            <i class="service-icon fa fa-pencil"></i>
+            <h4>Pencil Sharpening</h4>
+            <p>We've been voted the best pencil sharpening service for 10 consecutive years. If you have a pencil that feels dull, we'll get it sharp!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Services -->
+  <!-- Callout -->
+  <div class="callout">
+    <div class="vert-text">
+      <h1>A Dramatic Text Area</h1>
+    </div>
+  </div>
+  <!-- /Callout -->
+  <!-- Portfolio -->
+  <div id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-4 text-center">
+          <h2>Experience</h2>
+          <div class="glyphicon glyphicon-briefcase bigIcon"></div>
+        </div>
+      </div>
+      <div class="row">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+        <div class="et-wrapper et-rotate col-md-4 col-sm-3" et-in="rotateCubeBottomIn" et-out="rotateCubeBottomOut">
+          <div class="et-page panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">CSI Services inc.</h3>
+              <img class="img-portfolio img-responsive" src="img/rics-software-logo.jpg">
+            </div>
+            <div class="panel-body">
+              <h4>Des Moines - Iowa</h4>
+              <h4>Programmer Analyst</h4>
+              <p>VB6, .Net 3.0 Developer, WPF, Unit Testing</p>
+              <h4>July 2006 - July 2007</h4>
+              <h4 class="oliveHighlight stickyBottom">Click to view more</h4>
+            </div>
+          </div>
+          <div class="et-page panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">What I did</h3>
+            </div>
+            <div class="panel-body">
+              <p>Converted software from VB6 Access DB to .net 3.0 WPF MSSql. Developed new features, created reports, tested software.</p>
+            </div>
+          </div>
+          <div class="et-page panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Technologies</h3>
+            </div>
+            <div class="panel-body">
+              <p>WPF, VB6, VB.net, MVC, Win Forms, Entity Framework, Unit Testing</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 text-center">
+          <div class="et-wrapper et-rotate" et-in="rotateSlideIn" et-out="rotateSlideOut">
+            <div class="et-page panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Infocision Management Corp.</h3>
+                <img class="img-portfolio img-responsive" src="img/infocision.jpg">
+              </div>
+              <div class="panel-body">
+                <h4>Applications Developer</h4>
+                <p>.Net, WPF, WCF, Silverlight, ASP.net, MVC4, Unit Testing</p>
+                </a>
+                <h4>July 2007 - August 2012</h4>
+              </div>
+            </div>
+            <div class="et-page">
+              <h3>Description</h3>
+              <p>Developed and maintained applications for infrastructure and clients. Worked directly with clients to gather requirements and research improvments with the latest technologies.</p>
+              <p>Converted software from VB6 Access DB to .net 3.0 WPF MSSql. Developed new features, created reports, tested software.</p>
+            </div>
+            <div class="et-page">
+              <h3>Technologies Used</h3>
+              <p>WPF, WCF, Silverlight, MVC, Win Forms, Entity Framework, Unit Testing</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 text-center">
+          <div class="et-wrapper et-rotate" et-in="rotateSlideIn" et-out="rotateSlideOut">
+            <div class="et-page panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Infocision Management Corp.</h3>
+                <img class="img-portfolio img-responsive" src="img/infocision.jpg">
+              </div>
+              <div class="panel-body">
+                <h4>Applications Developer</h4>
+                <p>.Net, WPF, WCF, Silverlight, ASP.net, MVC4, Unit Testing</p>
+                </a>
+                <h4>July 2007 - August 2012</h4>
+              </div>
+            </div>
+            <div class="et-page">
+              <h3>Description</h3>
+              <p>Developed and maintained applications for infrastructure and clients. Worked directly with clients to gather requirements and research improvments with the latest technologies.</p>
+              <p>Converted software from VB6 Access DB to .net 3.0 WPF MSSql. Developed new features, created reports, tested software.</p>
+            </div>
+            <div class="et-page">
+              <h3>Technologies Used</h3>
+              <p>WPF, WCF, Silverlight, MVC, Win Forms, Entity Framework, Unit Testing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Portfolio -->
+  <!-- Call to Action -->
+  <div class="call-to-action">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 text-center">
+          <h3>The buttons below are impossible to resist.</h3>
+          <a href="#" class="btn btn-lg btn-default">Click Me!</a>
+          <a href="#" class="btn btn-lg btn-primary">Look at Me!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Call to Action -->
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h3>Contact</h3>
+          <hr>
+          <address>
+                            <strong>Email:</strong>
+                            <a href="mailto:#">deren@bamboolotus.net</a>
+                            <br>
+                            <br>
+                            <strong>Phone:</strong>(515) 329-2323</address>
+        </div>
+      </div>
+      <div>
+        <div class="col-md-6 col-md-offset-3 contact-form">
+          <form id="contact" method="post" class="form" role="form">
+            <div class="row">
+              <div class="col-xs-6 col-md-6 form-group">
+                <input class="form-control" id="name" name="name" placeholder="Name" type="text" />
+              </div>
+              <div class="col-xs-6 col-md-6 form-group">
+                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
+              </div>
+            </div>
+            <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
+            <br />
+            <div class="row">
+              <div class="col-xs-12 col-md-12 form-group">
+                <button class="btn btn-primary pull-right" type="submit">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <ul class="list-inline">
+              <li>
+                <i class="fa fa-facebook fa-3x"></i>
+              </li>
+              <li>
+                <i class="fa fa-twitter fa-3x"></i>
+              </li>
+              <li>
+                <i class="fa fa-dribbble fa-3x"></i>
+              </li>
+              <li>
+                <i class="fa fa-instagram fa-3x"></i>
+              </li>
+            </ul>
+            <div class="top-scroll">
+              <a href="#top"><i class="fa fa-circle-arrow-up scroll fa-4x"></i></a>
+            </div>
+            <hr>
+            <p>Copyright &copy; Bamboo x Lotus 2014</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /Footer -->
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript for the Side Menu and Smooth Scrolling
+            -->
+    <script>
+      $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+      });
+    </script>
+    <script>
+      $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+      });
+    </script>
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+</body>
 
-</div>
+</html>
